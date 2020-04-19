@@ -6,12 +6,29 @@ export default class TechList extends Component {
     newTech:[
       ''
     ],
-    techs:[
-      'Node.js',
-      'React.js',
-      'React Native'
-    ]
+    techs:[]
+    
   };
+//Executado assim q o componente aparece em tela(chamrada a api etc)
+componentDidMount(){
+  const techs =localStorage.getItem('techs')
+  if( techs){
+    this.setState({techs:JSON.parse(techs)})
+  }
+}
+
+//sempre q ocorre mudança nas props ou no estado
+componentDidUpdate(_, PrevState){
+  if (PrevState !== this.state.techs){
+    localStorage.setItem('techs',JSON.stringify(this.state.techs))
+  }
+}
+
+//quando o componet deixa de existir
+componentWillUnmount(){
+  
+}
+
   handleIputChange = e => {
     this.setState({newTech: e.target.value})
   }
