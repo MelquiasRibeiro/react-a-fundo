@@ -20,13 +20,15 @@ module:{
   },
   {
     test: /\.css$/,
-    exclude: /node_modules/,
-    use:[{
-      loader: 'style-loader'
-    },
+    use:[
+  {loader: 'style-loader'},
+  {loader: 'css-loader'}
+]
+  },
   {
-    loader: 'css-loader'
-  }]
+    test: /.*\.(gif|png|jpe?g)$/i,
+    use:
+  {loader: 'file-loader'},
   }
   ]
 }
