@@ -18,3 +18,26 @@ img {
   padding: 15px;
 
 }
+
+ul {
+ list-style: decimal;
+}
+
+button {
+ font-size: 16px;
+ padding-left: 10px;
+ margin-left: 10px;
+ border-radius: 4px;
+ background-color: #FEE93E;
+ font-weight:  bold;
+ border: none;
+}
+
+
+
+input {
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight:  bold;
+  color: #000000;
+ }
