@@ -1,13 +1,13 @@
 import React from 'react';
 import './app.css'
 import  Vader from './assets/star-wars.jpg'
+import TechList from './components/techList'
+
  function App() {
   return (
-    <div className="container">
-   <h2>Star</h2>
-   <h1>Wars</h1>
-   <img src={Vader}></img>
-    </div>
+   <div className="container">
+      <TechList/>
+   </div>
   );
 }
 export default App;
