@@ -1,7 +1,7 @@
 # react-a-fundo
 Este repositório é destinado ao estudo de tópicos básicos e avançados de React.Js
 
-Nesta Esta aplicação foi configurada sem o axílio de templates como o "Create-React-APP", foram manualmente configurados
+Esta aplicação foi configurada sem o axílio de templates como o "Create-React-APP", foram manualmente configurados
 o *babel* e o *webPack* para a utilização em uma aplicação **React**.
 
 ## Conceitos abordados nesta aplicação:
